@@ -1,7 +1,7 @@
 # Windows DNS A record add with roll-back
 
 ## Description
-This workflow starts with a condictional task which checks user input for the desire to also create a PTR record when creating a Windows DNS A recrod.  The workflow also has 3 customer tasks.  1 task adds the A record to Windows DNS with an associated PTR record.  Another tasks effectively does the exact same thing except without the PTR recrod.  The third task is used for rollback of either of the two Add record tasks.
+This workflow starts with a condictional task which checks user input for the desire to also create a PTR record when creating a Windows DNS A recrod.  The workflow also has 3 customer tasks.  1 task adds the A record to Windows DNS with an associated PTR record.  Another tasks effectively does the exact same thing except without the PTR record.  The third task is used for rollback of either of the two Add record tasks.
 
 ## Instructions
 Import the workflow into Intersight Cloud Orchestrator.  Create a powershell target (see PowerShell requirements section below).  Change the Zone Name Worklow input to the zone you would like to use.  You can now run the workflow.
